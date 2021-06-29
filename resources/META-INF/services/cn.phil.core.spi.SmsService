@@ -1,0 +1,2 @@
+cn.phil.core.spi.impl.AliSmsService
+cn.phil.core.spi.impl.QiniuSmsService
