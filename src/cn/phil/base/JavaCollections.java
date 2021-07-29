@@ -31,6 +31,10 @@ public class JavaCollections {
                 return o1.compareTo(o2);
             }
         });
-
+        Arrays.sort(c, (o1, o2) -> {
+            return o1.compareTo(o2);
+        });
+        Map<String, Object> map = new HashMap<String, Object>();
+        final Map<String, Object> synchronizedMap = Collections.synchronizedMap(map);
     }
 }

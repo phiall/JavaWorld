@@ -5,8 +5,16 @@ package cn.phil.base;
  * @author Heping
  * @date 2019/11/8 16:13
  */
+interface AInterface {
+    default void say() {}
+}
+abstract class AAbstractClass {
+    void say() {
+        System.out.println("hello");
+    }
+}
 interface IRequestParser<T> {
-    public T parser(String input);
+    T parser(String input);
 }
 class IntegerRequestParser implements IRequestParser<Integer> {
     @Override
